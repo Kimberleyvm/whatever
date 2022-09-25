@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous">
+    <style>
+      [class*="col-"] {
+        width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+      }
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+        body {
+          overflow-x: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: #333;
+             }
+        .select {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+             }
+         button {
+            width: 130px;
+            height: 50px;
+            cursor: pointer;
+            background: #333;
+            display: inline-block;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+            color: silver;
+            font-size: 16px;
+                   }
+
+            button:hover {
+            box-shadow: -5px -5px 15px #444, 5px 5px 15px silver, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+            font-size: 15px;
+            transition: 500ms;
+                    }
+            button:focus {
+            outline: none;
+                   }
+           .red:hover {
+            color: #802020;
+            text-shadow: 0px 0px 10px black;
+                   }
+                   #logo{
+                   background: #333;
+                   border: none;
+                   border-radius: 180px;
+                   box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+                   color: #222;
+                   display: flex;
+                   justify-content: center;
+                   margin-left: auto;
+                   margin-right: auto;
+                         }
+                   #logo:focus {
+                   outline: none;
+                             }
+                  .flip-box {
+                   background-color: transparent;
+                   margin: 10px;
+                   width: 250px;
+                   height: 300px;
+                   border: 1px solid #802020;
+                   box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+                   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+                   display: flex;
+                   justify-content: center;
+                   margin-left: auto;
+                   margin-right: auto;
+                 }
+
+                 /* This container is needed to position the front and back side */
+                 .flip-box-inner {
+                   position: relative;
+                   width: 100%;
+                   height: 100%;
+                   text-align: center;
+                   transition: transform 0.8s;
+                   transform-style: preserve-3d;
+                 }
+
+                 /* Do an horizontal flip when you move the mouse over the flip box container */
+                 .flip-box:hover .flip-box-inner {
+                   transform: rotateY(180deg);
+                 }
+
+                 /* Position the front and back side */
+                 .flip-box-front, .flip-box-back {
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   -webkit-backface-visibility: hidden; /* Safari */
+                   backface-visibility: hidden;
+                 }
+
+                 /* Style the front side (fallback if image is missing) */
+                 .flip-box-front {
+                   background-color: #bbb;
+                   color: black;
+                 }
+
+                 /* Style the back side */
+                 .flip-box-back {
+                   background-color: black;
+                   color: white;
+                   transform: rotateY(180deg);
+                 }
+                 .wrapper{
+                   display: flex;
+                   justify-content: center;
+                   margin-left: auto;
+                   margin-right: auto;
+                 }
+
+                   #hardrock{
+                     border-radius: 100px;
+                       box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+                   }
+                   footer{
+                     height: 100px;
+                     color: #802020;
+                     text-align: left;
+                   }
+                   #info{
+                     display: block;
+                     color: silver;
+                     padding: 15px;
+                     width:800px;
+                   }
+                   .p{
+                     display: flex;
+                     justify-content: center;
+                     font-family: "Comic Sans" sans-serif;
+      </style>
+        <title>about</title>
+      </head>
+      <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+          <div class="header">
+              <img id="logo" src="img/logoblack.jpg" alt name="logo" width="450px" height="300px"><br>
+              <br>
+              <br>
+          <div class="col-sm-12">
+            <div class="wrapper">
+              <a href="index.html"><button class="select red">Home</button></a>
+              <a href="about.html"><button class="select red">Over ons</button></a>
+              <a href="contact.html"><button class="select red">Contact</button></a>
+            </div >
+            </div>
+            </div>
+          </div>
+          </div>
+          <br>
+          <br>
+          <div class="wrapper" style="display: flex;">
+            <div class="row">
+            <div class="col-sm">
+              <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="img/frans.jpg" alt name="gitarist" style="width:250px;height:300px">
+                  </div>
+                  <div class="flip-box-back">
+                    <br>
+                  <h2>Frans</h2>
+                  <br>
+                  <p>..is onze gitarist. Echt een topper!</p>
+                  <br>
+                  <br>
+                  <img id="hardrock" src="img/hardrock.jpg" style="width:70px; height:70px;">
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="col-sm">
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/marcel2.jpg" alt name="bassist" style="width:250px;height:300px">
+                    </div>
+                    <div class="flip-box-back">
+                      <br>
+                      <h2>Marcel</h2>
+                      <br>
+                      <p>..is onze bassist. Echt een topper!</p>
+                      <br>
+                      <br>
+                      <img id="hardrock" src="img/hardrock.jpg" style="width:70px; height:70px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/zangeres.jpg" alt name="zangeres" style="width:250px;height:300px">
+                  </div>
+                  <div class="flip-box-back">
+                    <br>
+                    <h2>Jessica</h2>
+                    <p>..is onze zangeres.<br> Echt een topper!</p>
+                    <br>
+                    <br>
+                    <img id="hardrock" src="img/hardrock.jpg" style="width:70px; height:70px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/drummer.jpg" alt name="drummer" style="width:250px;height:300px">
+                  </div>
+                  <div class="flip-box-back">
+                    <br>
+                    <h2>Justin</h2>
+                    <p>..is onze drummer. Echt een topper!</p>
+                    <br>
+                    <br>
+                    <img id="hardrock" src="img/hardrock.jpg" style="width:70px; height:70px;">
+                  </div>
+                </div>
+              </div>
+              </div>
+              <br>
+              <br>
+
+              <!--- <audio controls>
+                <source src="audio/ready_to_go.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio> --->
+
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <footer><img id="hardrock" src="img/hardrock.jpg" width="60px" height="60px">&nbsp &nbsp<i>Copyright: Whatever</i></footer>
+          <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+          crossorigin="anonymous">
+          </script>
+      </body>
+    </html>

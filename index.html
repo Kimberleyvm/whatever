@@ -80,12 +80,6 @@
                   }
             .wrapper{
               display: flex;
-              text-align: center;
-              width: 50%;
-              position: relative;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
               justify-content: center;
               margin-left: auto;
               margin-right: auto;
@@ -96,8 +90,10 @@
             #logo{
               display: flex;
               justify-content: center;
+              margin-left: auto;
+              margin-right: auto;
             background: #333;
-            margin: 10px;
+
             border: none;
             border-radius: 180px;
             box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
@@ -117,13 +113,18 @@
                  height: 100px;
                  color: #802020;
                  text-align: left;
-                 
+
                }
                #hardrock{
                  border-radius: 100px;
                  box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
                }
                iframe{
+                 display: flex;
+                 justify-content: center;
+
+                 margin-left: auto;
+                 margin-right: auto;
                  padding: 5px;
                  border-style: inset;
                  border-color: #802020;
@@ -136,13 +137,37 @@
                .header{
                  display: flex;
                  justify-content: center;
+
+                 margin-left: auto;
+                 margin-right: auto;
                }
                .container{
-                 margin: 25px;
-                 width: auto;
-                 height: auto;
                  display: flex;
                  justify-content: center;
+
+                 margin-left: auto;
+                 margin-right: auto;
+
+               }
+               .col-sm{
+                 display: flex;
+                 justify-content: center;
+
+                 margin-left: auto;
+                 margin-right: auto;
+               }
+               #menu{
+                 display: flex;
+                 justify-content: center;
+
+                 margin-left: auto;
+                 margin-right: auto;
+               }
+               .you{
+                 display: flex;
+                 justify-content: center;
+                 margin-left: auto;
+                 margin-right: auto;
                }
             }
     </style>
@@ -151,32 +176,33 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-12">
         <div class="header">
             <img id="logo" src="img/logoblack.jpg" alt name="logo" width="450px" height="300px"><br>
             <br>
             <br>
-        <div class="col-sm-8">
+        <div class="col-sm-12">
           <div class="wrapper">
+            <div id="menu">
             <a href="index.html"><button class="select red">Home</button></a>
             <a href="about.html"><button class="select red">Over ons</button></a>
             <a href="contact.html"><button class="select red">Contact</button></a>
-
+          </div>
         </div>
         </div>
           <br>
           <br>
-        <div class="col-sm">
-          <p class="text-left" style="font-size: 22pt; color: #802020; margin: 10px; padding: 10px;"><b> 'Whatever,<br> als het maar <i>ROCK</i> is!'</b></p>
+        <div class="col-sm-12">
+          <p class="text-center" style="font-size: 22pt; color: #802020; margin: 10px; padding: 10px;"><b> 'Whatever,<br> als het maar <i>ROCK</i> is!'</b></p>
         </div><br>
       </div>
       </div>
 
-        <div class="col-sm-3" style="background-color: #333;">
+
           <div class="wrapper">
-            <div class="col-sm">
-              <iframe width="450" height="300" src="https://www.youtube.com/embed/AAd8ZqWHIYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="450" height="300" src="https://www.youtube.com/embed/UUAQwL9QBtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-sm-12">
+              <iframe class="you" width="450" height="300" src="https://www.youtube.com/embed/AAd8ZqWHIYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="you" width="450" height="300" src="https://www.youtube.com/embed/UUAQwL9QBtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
         </div>
         <br>
